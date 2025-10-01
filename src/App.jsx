@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-      <div className='p-6 md:p-9 flex flex-col gap-8'>
+      <div className='p-6 md:p-9 flex flex-col gap-2 md:gap-8'>
 
         <div className='flex flex-wrap lg:flex-nowrap gap-4 md:gap-8'>
           <div>
@@ -30,7 +30,7 @@ function App() {
           </div>
         </div>
 
-        {/* <div className='grid grid-cols-2 gap-8'>
+        <div className='flex flex-wrap md:grid md:grid-cols-2 md:gap-8 gap-2'>
           <Freelancer company="Freelancer" role="Logo/Brand Designer" duration="2019 - Present">
             <div>
                 <ul className="list-disc list-inside p-4 leading-8">
@@ -52,7 +52,7 @@ function App() {
           </Freelancer>
         </div>
 
-        <div className='grid grid-cols-2 gap-8'>
+        {/* <div className='grid grid-cols-2 gap-8'>
           <div className='grid grid-rows-3 gap-10'>
             <DesignTools />
             <EditingTools />

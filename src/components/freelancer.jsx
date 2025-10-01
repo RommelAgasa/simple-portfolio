@@ -2,9 +2,9 @@ export default function Freelancer(props){
     const {company, role, duration} = props;
 
     return(
-        <div className="text-white bg-gray-900 rounded-2xl p-4">
+        <div className="text-white bg-gray-900 rounded-2xl p-4 text-sm md:text-lg">
             <div className="flex justify-between items-center w-full p-8 border-b border-gray-700">
-                <div className="text-xl">
+                <div>
                     <h1>{company}</h1>
                     <h2 className="text-gray-500">{role}</h2>
                 </div>

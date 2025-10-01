@@ -3,7 +3,7 @@ export default function Interest(){
         <div className="text-white bg-gray-900 rounded-2xl p-4">
             <div className="flex flex-wrap gap-2 sm:gap-2 flex-row w-full justify-center items-center">
                 <div className="border-r border-gray-700 p-4 grow flex justify-center items-center">
-                    <div className="text-xs md:text-lg">Interest</div>
+                    <div className="text-sm md:text-lg">Interest</div>
                 </div>
                 <div className="grow">
                     <div className="bg-black flex justify-center items-center gap-2 py-1 sm:py-2 rounded-2xl text-gray-500"> 

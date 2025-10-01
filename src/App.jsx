@@ -14,17 +14,23 @@ function App() {
 
   return (
     <>
-      <div className='p-9 flex flex-col gap-8'>
+      <div className='p-6 md:p-9 flex flex-col gap-8'>
 
-        <div className='flex gap-8'>
-          <ProfileImage />
-          <div className='grid grid-rows-2 gap-8'>
-              <Introduction />
-              <Interest />
+        <div className='flex flex-wrap lg:flex-nowrap gap-4 md:gap-8'>
+          <div>
+            <ProfileImage />
+          </div>
+          <div className='grid gap-2 md:gap-4'>
+              <div>
+                <Introduction />
+              </div>
+              <div>
+                <Interest />
+              </div>
           </div>
         </div>
 
-        <div className='grid grid-cols-2 gap-8'>
+        {/* <div className='grid grid-cols-2 gap-8'>
           <Freelancer company="Freelancer" role="Logo/Brand Designer" duration="2019 - Present">
             <div>
                 <ul className="list-disc list-inside p-4 leading-8">
@@ -61,7 +67,7 @@ function App() {
 
         <div>
           <Details/>
-        </div>
+        </div> */}
       </div>
     </>
   )

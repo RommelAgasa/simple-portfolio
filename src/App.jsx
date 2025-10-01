@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-      <div className='p-6 md:p-9 flex flex-col gap-2 md:gap-8'>
+      <div className='p-6 md:p-9 flex flex-col gap-4 md:gap-8'>
 
         <div className='flex flex-wrap lg:flex-nowrap gap-4 md:gap-8'>
           <div>
@@ -30,35 +30,47 @@ function App() {
           </div>
         </div>
 
-        <div className='flex flex-wrap md:grid md:grid-cols-2 md:gap-8 gap-2'>
-          <Freelancer company="Freelancer" role="Logo/Brand Designer" duration="2019 - Present">
-            <div>
-                <ul className="list-disc list-inside p-4 leading-8">
-                    <li>Worked on diverse logo and brand identity projects.</li>
-                    <li>Collaborated with clients from multiple countries.</li>
-                    <li>Developed a versatile designs skill set.</li>
-                    <li>Adapted to unique challenges and requirements.</li>
-                </ul>
-            </div>
-          </Freelancer>
-          <Freelancer company="Meetzed" role="Graphic Designer" duration="2020 - 2021">
-            <div>
-                <ul className="list-disc list-inside p-4 leading-8">
-                  <li>Collaboration: Supported Lead Designer on projects.</li>
-                  <li>Branding: Crafted unique brand identities.</li>
-                  <li>Tools: Used Illustrator, Photoshop, & InDesign</li>
-                </ul>
-            </div>
-          </Freelancer>
+        <div className='flex flex-wrap w-full md:grid md:grid-cols-2 md:gap-8 gap-4 items-stretch'>
+          <div className='flex-1'>
+            <Freelancer company="Freelancer" role="Logo/Brand Designer" duration="2019 - Present">
+              <div className='flex flex-col'>
+                  <ul className="list-disc list-inside p-4 leading-8">
+                      <li>Worked on diverse logo and brand identity projects.</li>
+                      <li>Collaborated with clients from multiple countries.</li>
+                      <li>Developed a versatile designs skill set.</li>
+                      <li>Adapted to unique challenges and requirements.</li>
+                  </ul>
+              </div>
+            </Freelancer>
+          </div>
+          <div className='flex-1'>
+             <Freelancer company="Meetzed" role="Graphic Designer" duration="2020 - 2021">
+              <div className='flex flex-col'>
+                  <ul className="list-disc list-inside p-4 leading-8">
+                    <li>Collaboration: Supported Lead Designer on projects.</li>
+                    <li>Branding: Crafted unique brand identities.</li>
+                    <li>Tools: Used Illustrator, Photoshop, & InDesign</li>
+                  </ul>
+              </div>
+            </Freelancer>
+          </div>
         </div>
 
-        {/* <div className='grid grid-cols-2 gap-8'>
-          <div className='grid grid-rows-3 gap-10'>
-            <DesignTools />
-            <EditingTools />
-            <Languages />
+        <div className='flex flex-wrap md:grid md:grid-cols-2 gap-4 md:gap-8 items-stretch'>
+          <div className='grid grid-rows-3 gap-4 md:gap-6 h-full w-full'>
+            <div>
+              <DesignTools />
+            </div>
+            <div>
+              <EditingTools />
+            </div>
+            <div>
+              <Languages />
+            </div>
           </div>
-          <Academic />
+          <div className='h-full w-full'>
+            <Academic />
+          </div>
         </div>
 
         <div>
@@ -67,7 +79,7 @@ function App() {
 
         <div>
           <Details/>
-        </div> */}
+        </div>
       </div>
     </>
   )

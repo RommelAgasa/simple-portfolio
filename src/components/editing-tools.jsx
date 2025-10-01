@@ -6,10 +6,10 @@ export default function EditingTools(){
 
     return(
         <div className="text-white bg-gray-900 rounded-2xl p-4 flex items-center">
-            <div className="border-r border-gray-700 p-4 w-[30%] text-center text-xl">
+            <div className="border-r border-gray-700 p-4 w-[30%] text-center text-sm md:text-xl">
                 <h1>Editing Tools</h1>
             </div>
-            <div className='grid grid-cols-4 gap-14 ml-8'>
+            <div className='grid grid-cols-4 gap-4 lg:gap-14 ml-8'>
                 <div className=''>
                     {adobeAfterEffects && <img src={adobeAfterEffects} alt="Adobe After Effects" className="h-14 w-16 rounded-2xl inline-block"/>}
                 </div>
